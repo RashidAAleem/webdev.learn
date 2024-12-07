@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/html-quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HTML Quiz</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">Web Dev</a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <div class="profile">
+                    Logged in as <span id="username-display"></span> 
+                    <i class="fas fa-user-circle logged-in"></i>
+                    <button id="logout-button" class="btn-signup">Logout</button>
+                </div>
+            </div>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="auth-buttons">
+                <button id="logout-button-dropdown" class="btn-signup">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Section -->
+    <section class="quiz">
+        <div class="container">
+            <!-- Main Heading for the Quiz -->
+            <h1 class="quiz-heading">HTML Quiz</h1>
+            
+            <div class="quiz-cards">
+                <p id="timer">1 : 15</p>
+                <div class="quiz-card">
+                    <!-- Question -->
+                    <h3 id="question">HTML Quiz</h3>
+                    
+                    <!-- Options -->
+                    <div class="options">
+                        <label>
+                            <input type="radio" onchange="enableBtn()" name="answer" value="1">
+                            <span id="option1">Option 1</span>
+                        </label>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="radio" onchange="enableBtn()" name="answer" value="2">
+                            <span id="option2">Option 2</span>
+                        </label>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="radio" onchange="enableBtn()" name="answer" value="3">
+                            <span id="option3">Option 3</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Next Button -->
+                    <button class="nextQuestion" disabled onclick="loadQuestion()" id="nextQuestion">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebDev Tutorials. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz/html-quiz.js"></script>
+</body>
+</html>

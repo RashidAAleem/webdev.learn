@@ -1,0 +1,157 @@
+/* Quiz Section */
+
+/* Navbar Profile Section */
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+.navbar .profile .logged-in {
+    font-size: 14px;
+    background-color: #3498db;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navbar .profile .logout-btn {
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar .profile .logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.navbar .profile i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.quiz {
+    padding: 60px 20px;
+    background-color: #f4f7fc;
+}
+
+.quiz .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quiz h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.quiz-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-card h3 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.quiz-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.quiz-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-card .btn:hover {
+    background-color: #2980b9;
+}
+
+.quiz-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+    .quiz-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #3498db;
+}
